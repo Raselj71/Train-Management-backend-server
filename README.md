@@ -223,6 +223,7 @@ Here are the main API endpoints for managing trains and purchasing tickets.
 ### Ticket Management 
 
 #### 1. buy ticket
+Please be careful when entering bordingStation and destinationStation. If you enter the same name station, this time it will work; otherwise, you will get an invalid train route error.
 - **Method**: `POST`
 - **Endpoint**: `/api/v1/ticket/buy-ticket`
 - **Body**:
