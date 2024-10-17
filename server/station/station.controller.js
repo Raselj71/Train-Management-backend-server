@@ -11,7 +11,7 @@ export const createStation=async(req,res,next)=>{
 
           const save_station=await new_station.save();
 
-          return res.status(201).json({status:true, message:"Station created"})
+          return res.status(201).json({status:true, message:"Station created", data:save_station})
           
 
       } catch (error) {
