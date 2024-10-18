@@ -15,7 +15,7 @@ export const updateTrain=async(req,res,next)=>{
   try {
     const id=req.params.id;
     const { trainNumber, trainName, stopages } = req.body;
-    const train=await trainModel.findByIdAndUpdate(id,{trainName,trainNumber,stopages})
+    const train=await trainModel.findByIdAndUpdate(id,{trainName,trainNumber,stopages},{new:true})
 
     
     if (!train) {
@@ -46,7 +46,7 @@ export const getSingleTrain=async(req,res,next)=>{
     try {
          const id=req.params.id
         const getTrain = await trainModel.findById(id)
-        .populate('stopages.station_id', 'stationName location') 
+        .populate('stopages.station_id', 'stationName location')
         .exec();
         
         return res.status(200).json({status:true, data:getTrain})
