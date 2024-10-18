@@ -49,7 +49,7 @@ yarn install
 
 ### 3. Set Up .env file
 
-At first , you have setup your env file. 
+At first , you have setup your .env file. 
 
 ```
 PORT=5000
@@ -70,7 +70,7 @@ The server will start on **http://localhost:5000** by default.
 
 ## API Endpoints
 
-Here are the main API endpoints for managing trains and purchasing tickets.
+Here are the main API endpoints for managing trains and purchasing tickets. You can check my API using Postman
 
 ### User Management
 
