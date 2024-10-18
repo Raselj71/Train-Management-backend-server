@@ -29,8 +29,7 @@ To run this project locally, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/train-management-system.git
-cd train-management-system
+git clone https://github.com/Raselj71/Train-Management-backend-server.git
 ```
 
 ### 2. Install Dependencies
@@ -84,8 +83,7 @@ Here are the main API endpoints for managing trains and purchasing tickets. You 
     "email":"raselj71@gmail.com",
     "password":"123456"
   }
-
-- ```
+  ```
   
 #### 2. login
 - **Method**: `POST `
@@ -142,6 +140,7 @@ Here are the main API endpoints for managing trains and purchasing tickets. You 
 #### 3. update Station
 - **Method**: `PUT `
 - **Endpoint**: `/api/v1/station/update/:id`
+- **Example**: `http://localhost:5000/api/v1/station/update/6711451ad59dd577b7b1d897`
 - **Body**:
  ```json
   {
@@ -181,6 +180,7 @@ Here are the main API endpoints for managing trains and purchasing tickets. You 
 
 - **Method**: `PUT`
 - **Endpoint**: `/api/v1/train//update-train/:id`
+- **Example**: `http://localhost:5000/api/v1/train//update-train/671147c31736d3e583204bf0`
 - **Body**:
 
   ```json
